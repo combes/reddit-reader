@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import SwiftyJSON
 @testable import ChrisCombes_iOSCodeChallenge
 
 class ChrisCombes_iOSCodeChallengeTests: XCTestCase {
@@ -21,16 +22,21 @@ class ChrisCombes_iOSCodeChallengeTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testLoadingLocalPost() {
+        
+        if let path = Bundle.main.path(forResource: "example-reddit-data", ofType: "json") {
+            let url = URL(fileURLWithPath: path)
+            do {
+                let data = try NSData(contentsOf: url, options: NSData.ReadingOptions.uncached)
+                let jsonData = JSON(data: data as Data)
+                if let query = RedditQuery(json: jsonData) {
+                    debugPrint(query)
+                } else {
+                    XCTFail("Could not parse JSON")
+                }
+            } catch {
+                XCTFail("Error: \(error)")
+            }
         }
     }
-    
 }
