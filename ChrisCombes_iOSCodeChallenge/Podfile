@@ -1,0 +1,20 @@
+# Podfile
+
+platform :ios, '8.0'
+use_frameworks!
+
+inhibit_all_warnings!
+
+# Pods
+def shared_pods
+pod "SwiftyJSON"
+pod 'SwiftMessages'
+end
+
+target 'ChrisCombes_iOSCodeChallenge' do
+shared_pods
+end
+
+target 'ChrisCombes_iOSCodeChallengeTests' do
+shared_pods
+end
