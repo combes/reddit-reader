@@ -36,7 +36,8 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
         runSearchWithText(defaultSearchCategory)
     }
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    // MARK: UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var count = 0
         
         if queryResult != nil {
@@ -46,7 +47,7 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
         return count
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: RedditPostTableViewCell.identifier) as! RedditPostTableViewCell
         
         if let post = queryResult?.redditPosts[indexPath.row] {
@@ -54,6 +55,13 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
         }
         
         return cell
+    }
+    
+    // MARK: UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let post = queryResult?.redditPosts[indexPath.row] {
+            sharePost(post)
+        }
     }
     
     // MARK: Helpers
@@ -80,6 +88,12 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
         }
     }
     
+    func sharePost(_ post: RedditPost) {
+        let items = String(format: "Check out what %@ said on Reddit: \"%@\"", post.author, post.title)
+        let controller = UIActivityViewController(activityItems: [items], applicationActivities: nil)
+        self.present(controller, animated: true, completion: nil)
+    }
+
     // MARK: Actions
     @IBAction func searchButtonTapped(_ sender: UIButton) {
         if let searchText = searchBar.text {
