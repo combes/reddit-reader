@@ -8,7 +8,6 @@ inhibit_all_warnings!
 # Pods
 def shared_pods
 pod "SwiftyJSON"
-pod 'SwiftMessages'
 pod 'SDWebImage', '~>3.8'
 end
 

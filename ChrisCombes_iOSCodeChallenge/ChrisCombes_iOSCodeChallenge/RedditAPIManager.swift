@@ -16,6 +16,11 @@ class RedditAPIManager {
     // Use public API feed
     let baseURL = "http://www.reddit.com/r/%@/.json"
     
+    /// Request posts matching the specified category.
+    ///
+    /// - Parameters:
+    ///   - category: Category to search for (e.g. "space")
+    ///   - onCompletion: Completion method to call once the network responds.
     func postsForCategory(_ category: String, onCompletion: @escaping (JSON) -> Void) {
         // Create full address path using provided category
         let fullAddress = String(format: baseURL, category)
