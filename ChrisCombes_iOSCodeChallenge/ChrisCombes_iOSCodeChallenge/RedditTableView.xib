@@ -55,15 +55,15 @@
                 </view>
             </subviews>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="jwB-Je-Erm" secondAttribute="bottom" id="6xU-o2-hIW"/>
-                <constraint firstItem="jwB-Je-Erm" firstAttribute="top" secondItem="pRB-AG-xhv" secondAttribute="bottom" id="8nH-nc-GK4"/>
                 <constraint firstAttribute="trailing" secondItem="jwB-Je-Erm" secondAttribute="trailing" id="CkW-XF-0qk"/>
                 <constraint firstAttribute="trailing" secondItem="pRB-AG-xhv" secondAttribute="trailing" id="DN1-ZP-6gc"/>
                 <constraint firstItem="jwB-Je-Erm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HAb-Ne-Oqc"/>
                 <constraint firstAttribute="bottom" secondItem="pRB-AG-xhv" secondAttribute="bottom" constant="603" id="I0q-j0-yeO"/>
                 <constraint firstItem="pRB-AG-xhv" firstAttribute="leading" secondItem="DRu-F8-duC" secondAttribute="trailing" id="ZaX-jm-qNl"/>
+                <constraint firstAttribute="bottom" secondItem="jwB-Je-Erm" secondAttribute="bottom" id="eM2-Lp-lyr"/>
+                <constraint firstItem="pRB-AG-xhv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="ofZ-jd-mfF"/>
                 <constraint firstItem="DRu-F8-duC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ovK-Re-1LX"/>
-                <constraint firstItem="pRB-AG-xhv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="ox0-id-0Ml"/>
+                <constraint firstItem="jwB-Je-Erm" firstAttribute="top" secondItem="DRu-F8-duC" secondAttribute="bottom" id="skX-ig-lw9"/>
                 <constraint firstItem="DRu-F8-duC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="wMQ-XL-ng1"/>
             </constraints>
             <point key="canvasLocation" x="35.5" y="-115.5"/>
