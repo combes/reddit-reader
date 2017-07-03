@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		192F9E9B30BA36C938D871F9 /* Pods_ChrisCombes_iOSCodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF54956A4E0DD58DCF85CB7D /* Pods_ChrisCombes_iOSCodeChallengeTests.framework */; };
+		833C1C501F0AB98000A56D55 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C1C4F1F0AB98000A56D55 /* UIColor+Theme.swift */; };
 		83440EC71F0AA9AF006AC4A7 /* RedditAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83440EC61F0AA9AF006AC4A7 /* RedditAPIManager.swift */; };
 		83440EC81F0AA9AF006AC4A7 /* RedditAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83440EC61F0AA9AF006AC4A7 /* RedditAPIManager.swift */; };
 		83440ECA1F0AAB76006AC4A7 /* RedditAPIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83440EC91F0AAB76006AC4A7 /* RedditAPIManagerTests.swift */; };
+		83440ECD1F0AAF78006AC4A7 /* RedditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83440ECC1F0AAF78006AC4A7 /* RedditTableViewController.swift */; };
+		83440ED11F0AAFE5006AC4A7 /* RedditTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83440ED01F0AAFE5006AC4A7 /* RedditTableView.xib */; };
+		83440ED21F0AB468006AC4A7 /* bebasneue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83EE33701F09FEC700386F0B /* bebasneue.ttf */; };
 		83EE333E1F098C9100386F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE333D1F098C9100386F0B /* AppDelegate.swift */; };
-		83EE33401F098C9100386F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE333F1F098C9100386F0B /* ViewController.swift */; };
 		83EE33431F098C9100386F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE33411F098C9100386F0B /* Main.storyboard */; };
 		83EE33451F098C9100386F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EE33441F098C9100386F0B /* Assets.xcassets */; };
 		83EE33481F098C9100386F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE33461F098C9100386F0B /* LaunchScreen.storyboard */; };
@@ -43,11 +46,13 @@
 		205BACD091F2EF52CE6686F0 /* Pods-ChrisCombes_iOSCodeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChrisCombes_iOSCodeChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChrisCombes_iOSCodeChallengeTests/Pods-ChrisCombes_iOSCodeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2AD50591955D7F70783ECD96 /* Pods-ChrisCombes_iOSCodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChrisCombes_iOSCodeChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChrisCombes_iOSCodeChallengeTests/Pods-ChrisCombes_iOSCodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		33635DE85A734E780B72DFB3 /* Pods-ChrisCombes_iOSCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChrisCombes_iOSCodeChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChrisCombes_iOSCodeChallenge/Pods-ChrisCombes_iOSCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		833C1C4F1F0AB98000A56D55 /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		83440EC61F0AA9AF006AC4A7 /* RedditAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditAPIManager.swift; sourceTree = "<group>"; };
 		83440EC91F0AAB76006AC4A7 /* RedditAPIManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditAPIManagerTests.swift; sourceTree = "<group>"; };
+		83440ECC1F0AAF78006AC4A7 /* RedditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditTableViewController.swift; sourceTree = "<group>"; };
+		83440ED01F0AAFE5006AC4A7 /* RedditTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedditTableView.xib; sourceTree = "<group>"; };
 		83EE333A1F098C9100386F0B /* ChrisCombes_iOSCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChrisCombes_iOSCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EE333D1F098C9100386F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83EE333F1F098C9100386F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83EE33421F098C9100386F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83EE33441F098C9100386F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83EE33471F098C9100386F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,6 +99,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		83440ECB1F0AAEE4006AC4A7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83440ECC1F0AAF78006AC4A7 /* RedditTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		83440ECF1F0AAFD3006AC4A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83440ED01F0AAFE5006AC4A7 /* RedditTableView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		83EE33311F098C9000386F0B = {
 			isa = PBXGroup;
 			children = (
@@ -117,16 +138,18 @@
 		83EE333C1F098C9100386F0B /* ChrisCombes_iOSCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				83440ECF1F0AAFD3006AC4A7 /* Views */,
+				83440ECB1F0AAEE4006AC4A7 /* Controllers */,
 				83EE336F1F09FEAF00386F0B /* Fonts */,
 				83EE33651F0992B800386F0B /* Network */,
 				83EE33611F098E4C00386F0B /* Data */,
 				83EE335D1F098E0000386F0B /* Model */,
 				83EE333D1F098C9100386F0B /* AppDelegate.swift */,
-				83EE333F1F098C9100386F0B /* ViewController.swift */,
 				83EE33411F098C9100386F0B /* Main.storyboard */,
 				83EE33441F098C9100386F0B /* Assets.xcassets */,
 				83EE33461F098C9100386F0B /* LaunchScreen.storyboard */,
 				83EE33491F098C9100386F0B /* Info.plist */,
+				833C1C4F1F0AB98000A56D55 /* UIColor+Theme.swift */,
 			);
 			path = ChrisCombes_iOSCodeChallenge;
 			sourceTree = "<group>";
@@ -278,6 +301,7 @@
 				83EE33631F098EB900386F0B /* example-reddit-data.json in Resources */,
 				83EE33481F098C9100386F0B /* LaunchScreen.storyboard in Resources */,
 				83EE33451F098C9100386F0B /* Assets.xcassets in Resources */,
+				83440ED11F0AAFE5006AC4A7 /* RedditTableView.xib in Resources */,
 				83EE33711F09FEC700386F0B /* bebasneue.ttf in Resources */,
 				83EE33431F098C9100386F0B /* Main.storyboard in Resources */,
 			);
@@ -287,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83440ED21F0AB468006AC4A7 /* bebasneue.ttf in Resources */,
 				83EE33641F098EB900386F0B /* example-reddit-data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,7 +416,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EE33401F098C9100386F0B /* ViewController.swift in Sources */,
+				833C1C501F0AB98000A56D55 /* UIColor+Theme.swift in Sources */,
+				83440ECD1F0AAF78006AC4A7 /* RedditTableViewController.swift in Sources */,
 				83EE333E1F098C9100386F0B /* AppDelegate.swift in Sources */,
 				83EE336D1F09FE8900386F0B /* NetworkHelper.swift in Sources */,
 				83EE336A1F09992100386F0B /* RedditQuery.swift in Sources */,

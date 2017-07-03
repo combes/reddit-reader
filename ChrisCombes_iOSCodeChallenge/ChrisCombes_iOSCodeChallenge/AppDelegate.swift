@@ -13,9 +13,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        
+        // TODO: Get font to be recognized
+        // Set global appearance
+//        UILabel.appearance().font = UIFont(name: "bebasneue", size: 16) // TODO:
+        
+//        func printFontsNames() {
+//            let fontFamilyNames = UIFont.familyNames
+//            for familyName in fontFamilyNames {
+//                print("------------------------------")
+//                print("Font Family Name = [\(familyName)]")
+//                let names = UIFont.fontNames(forFamilyName: familyName )
+//                print("Font Names = [\(names)]")
+//            }
+//        }
+//        printFontsNames()
+        
+        // Create initial view
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = RedditTableViewController.redditTableViewController()
+        window?.backgroundColor = UIColor.white
+        window?.makeKeyAndVisible()
+
         return true
     }
 
