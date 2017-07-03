@@ -36,5 +36,7 @@
 	<array>
 		<string>BebasNeue-Regular.ttf</string>
 	</array>
+	<key>CFBundleDisplayName</key>
+	<string>Reddit</string>
 </dict>
 </plist>

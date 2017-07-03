@@ -276,7 +276,6 @@
 				TargetAttributes = {
 					83EE33391F098C9100386F0B = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 2MX95JUKKX;
 						ProvisioningStyle = Automatic;
 					};
 					83EE334D1F098C9100386F0B = {
@@ -572,7 +571,7 @@
 			baseConfigurationReference = ECB45D7E6E24BD4DE5F88161 /* Pods-ChrisCombes_iOSCodeChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2MX95JUKKX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChrisCombes_iOSCodeChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.christophercombes.ChrisCombes-iOSCodeChallenge";
@@ -586,7 +585,7 @@
 			baseConfigurationReference = 33635DE85A734E780B72DFB3 /* Pods-ChrisCombes_iOSCodeChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2MX95JUKKX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ChrisCombes_iOSCodeChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.christophercombes.ChrisCombes-iOSCodeChallenge";
