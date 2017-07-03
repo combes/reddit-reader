@@ -13,6 +13,7 @@ class RedditPostTableViewCell: UITableViewCell {
     
     static let identifier = "redditCell"
     
+    @IBOutlet weak var elementsView: UIView!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!

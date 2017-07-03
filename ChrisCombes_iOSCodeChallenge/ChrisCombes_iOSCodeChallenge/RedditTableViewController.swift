@@ -66,6 +66,9 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
         if let post = queryResult?.redditPosts[indexPath.row] {
             cell.configureCellWithRedditPost(post)
             cell.contentView.alpha = 0
+            var f = cell.frame
+            f.origin.x = 100
+            cell.frame = f
         }
         
         return cell
@@ -79,8 +82,14 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
     }
 
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        UIView.animate(withDuration: 0.5) {
+
+        // Animate contents to fade in
+        let redditCell = cell as! RedditPostTableViewCell
+        redditCell.elementsView.frame = CGRect(origin: CGPoint(x: 100, y: cell.frame.origin.y), size: cell.frame.size)
+        
+        UIView.animate(withDuration: 0.8) {
             cell.contentView.alpha = 1.0
+            redditCell.elementsView.frame = CGRect(origin: CGPoint(x: 0, y: cell.frame.origin.y), size: cell.frame.size)
         }
     }
     
