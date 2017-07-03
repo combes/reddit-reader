@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RedditTableViewController" customModule="ChrisCombes_iOSCodeChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="searchBar" destination="DRu-F8-duC" id="kJa-xt-O5c"/>
                 <outlet property="view" destination="iN0-l3-epB" id="EUV-dU-prm"/>
             </connections>
         </placeholder>
@@ -20,7 +21,10 @@
             <subviews>
                 <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="funny" translatesAutoresizingMaskIntoConstraints="NO" id="DRu-F8-duC">
                     <rect key="frame" x="0.0" y="20" width="267" height="44"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="eqw-Sz-Udl"/>
+                    </connections>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jwB-Je-Erm">
                     <rect key="frame" x="0.0" y="64" width="375" height="603"/>
@@ -46,6 +50,9 @@
                                     <integer key="value" value="4"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="HqB-iX-LqF"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
