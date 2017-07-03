@@ -16,18 +16,6 @@ let numberOfCommentsField   = "num_comments"
 let upsField                = "ups"
 let downsField              = "downs"
 
-/*
- {
- "kind": "Listing",
- "data": {
- "modhash": "",
- "children": [
- {
- "kind": "t3",
- "data": {
-
- */
-
 class RedditPost: CustomDebugStringConvertible {
     
     // Applicable JSON fields
