@@ -16,7 +16,6 @@
 		83440ED11F0AAFE5006AC4A7 /* RedditTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83440ED01F0AAFE5006AC4A7 /* RedditTableView.xib */; };
 		83440ED21F0AB468006AC4A7 /* bebasneue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83EE33701F09FEC700386F0B /* bebasneue.ttf */; };
 		83EE333E1F098C9100386F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE333D1F098C9100386F0B /* AppDelegate.swift */; };
-		83EE33431F098C9100386F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE33411F098C9100386F0B /* Main.storyboard */; };
 		83EE33451F098C9100386F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83EE33441F098C9100386F0B /* Assets.xcassets */; };
 		83EE33481F098C9100386F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83EE33461F098C9100386F0B /* LaunchScreen.storyboard */; };
 		83EE33531F098C9100386F0B /* ChrisCombes_iOSCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE33521F098C9100386F0B /* ChrisCombes_iOSCodeChallengeTests.swift */; };
@@ -53,7 +52,6 @@
 		83440ED01F0AAFE5006AC4A7 /* RedditTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedditTableView.xib; sourceTree = "<group>"; };
 		83EE333A1F098C9100386F0B /* ChrisCombes_iOSCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChrisCombes_iOSCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83EE333D1F098C9100386F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83EE33421F098C9100386F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83EE33441F098C9100386F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83EE33471F098C9100386F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83EE33491F098C9100386F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 				83EE33611F098E4C00386F0B /* Data */,
 				83EE335D1F098E0000386F0B /* Model */,
 				83EE333D1F098C9100386F0B /* AppDelegate.swift */,
-				83EE33411F098C9100386F0B /* Main.storyboard */,
 				83EE33441F098C9100386F0B /* Assets.xcassets */,
 				83EE33461F098C9100386F0B /* LaunchScreen.storyboard */,
 				83EE33491F098C9100386F0B /* Info.plist */,
@@ -303,7 +300,6 @@
 				83EE33451F098C9100386F0B /* Assets.xcassets in Resources */,
 				83440ED11F0AAFE5006AC4A7 /* RedditTableView.xib in Resources */,
 				83EE33711F09FEC700386F0B /* bebasneue.ttf in Resources */,
-				83EE33431F098C9100386F0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,14 +446,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		83EE33411F098C9100386F0B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83EE33421F098C9100386F0B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83EE33461F098C9100386F0B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
