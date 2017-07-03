@@ -14,6 +14,8 @@ let childrenField       = "children"
 let postDataField       = "data"
 
 class RedditQuery {
+
+    var redditPosts = [RedditPost]()
     
     required init?(json: JSON) {
         
@@ -33,7 +35,7 @@ class RedditQuery {
         for (_, post):(String, JSON) in posts {
             let postData = post[postDataField]
             if let redditContents = RedditPost(json: postData) {
-                debugPrint(redditContents)
+                redditPosts.append(redditContents)
             }
         }
     }

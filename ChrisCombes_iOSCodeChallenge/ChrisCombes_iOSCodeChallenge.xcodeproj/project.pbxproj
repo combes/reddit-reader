@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		192F9E9B30BA36C938D871F9 /* Pods_ChrisCombes_iOSCodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF54956A4E0DD58DCF85CB7D /* Pods_ChrisCombes_iOSCodeChallengeTests.framework */; };
 		833C1C501F0AB98000A56D55 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C1C4F1F0AB98000A56D55 /* UIColor+Theme.swift */; };
+		833C1C521F0AE8CD00A56D55 /* RedditPostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 833C1C511F0AE8CD00A56D55 /* RedditPostTableViewCell.xib */; };
+		833C1C541F0AEC6400A56D55 /* RedditPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C1C531F0AEC6400A56D55 /* RedditPostTableViewCell.swift */; };
 		83440EC71F0AA9AF006AC4A7 /* RedditAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83440EC61F0AA9AF006AC4A7 /* RedditAPIManager.swift */; };
 		83440EC81F0AA9AF006AC4A7 /* RedditAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83440EC61F0AA9AF006AC4A7 /* RedditAPIManager.swift */; };
 		83440ECA1F0AAB76006AC4A7 /* RedditAPIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83440EC91F0AAB76006AC4A7 /* RedditAPIManagerTests.swift */; };
@@ -46,6 +48,8 @@
 		2AD50591955D7F70783ECD96 /* Pods-ChrisCombes_iOSCodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChrisCombes_iOSCodeChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChrisCombes_iOSCodeChallengeTests/Pods-ChrisCombes_iOSCodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		33635DE85A734E780B72DFB3 /* Pods-ChrisCombes_iOSCodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChrisCombes_iOSCodeChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChrisCombes_iOSCodeChallenge/Pods-ChrisCombes_iOSCodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		833C1C4F1F0AB98000A56D55 /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		833C1C511F0AE8CD00A56D55 /* RedditPostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedditPostTableViewCell.xib; sourceTree = "<group>"; };
+		833C1C531F0AEC6400A56D55 /* RedditPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditPostTableViewCell.swift; sourceTree = "<group>"; };
 		83440EC61F0AA9AF006AC4A7 /* RedditAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditAPIManager.swift; sourceTree = "<group>"; };
 		83440EC91F0AAB76006AC4A7 /* RedditAPIManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditAPIManagerTests.swift; sourceTree = "<group>"; };
 		83440ECC1F0AAF78006AC4A7 /* RedditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditTableViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				83440ED01F0AAFE5006AC4A7 /* RedditTableView.xib */,
+				833C1C511F0AE8CD00A56D55 /* RedditPostTableViewCell.xib */,
+				833C1C531F0AEC6400A56D55 /* RedditPostTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -166,7 +172,6 @@
 			children = (
 				83EE335E1F098E1000386F0B /* RedditPost.swift */,
 				83EE33691F09992100386F0B /* RedditQuery.swift */,
-				83440EC61F0AA9AF006AC4A7 /* RedditAPIManager.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				83EE336C1F09FE8900386F0B /* NetworkHelper.swift */,
+				83440EC61F0AA9AF006AC4A7 /* RedditAPIManager.swift */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 				83EE33451F098C9100386F0B /* Assets.xcassets in Resources */,
 				83440ED11F0AAFE5006AC4A7 /* RedditTableView.xib in Resources */,
 				83EE33711F09FEC700386F0B /* bebasneue.ttf in Resources */,
+				833C1C521F0AE8CD00A56D55 /* RedditPostTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +424,7 @@
 				83EE333E1F098C9100386F0B /* AppDelegate.swift in Sources */,
 				83EE336D1F09FE8900386F0B /* NetworkHelper.swift in Sources */,
 				83EE336A1F09992100386F0B /* RedditQuery.swift in Sources */,
+				833C1C541F0AEC6400A56D55 /* RedditPostTableViewCell.swift in Sources */,
 				83440EC71F0AA9AF006AC4A7 /* RedditAPIManager.swift in Sources */,
 				83EE335F1F098E1000386F0B /* RedditPost.swift in Sources */,
 			);
