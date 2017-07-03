@@ -20,6 +20,9 @@
 		83EE33641F098EB900386F0B /* example-reddit-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 83EE33621F098EB900386F0B /* example-reddit-data.json */; };
 		83EE336A1F09992100386F0B /* RedditQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE33691F09992100386F0B /* RedditQuery.swift */; };
 		83EE336B1F09992100386F0B /* RedditQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE33691F09992100386F0B /* RedditQuery.swift */; };
+		83EE336D1F09FE8900386F0B /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE336C1F09FE8900386F0B /* NetworkHelper.swift */; };
+		83EE336E1F09FE8900386F0B /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE336C1F09FE8900386F0B /* NetworkHelper.swift */; };
+		83EE33711F09FEC700386F0B /* bebasneue.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83EE33701F09FEC700386F0B /* bebasneue.ttf */; };
 		FAFC4A00DACEF05AD1C38357 /* Pods_ChrisCombes_iOSCodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B0EDC17FA156B14FDFE755 /* Pods_ChrisCombes_iOSCodeChallenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,8 @@
 		83EE335E1F098E1000386F0B /* RedditPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditPost.swift; sourceTree = "<group>"; };
 		83EE33621F098EB900386F0B /* example-reddit-data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "example-reddit-data.json"; path = "Data/example-reddit-data.json"; sourceTree = "<group>"; };
 		83EE33691F09992100386F0B /* RedditQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditQuery.swift; sourceTree = "<group>"; };
+		83EE336C1F09FE8900386F0B /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		83EE33701F09FEC700386F0B /* bebasneue.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bebasneue.ttf; sourceTree = "<group>"; };
 		B4B0EDC17FA156B14FDFE755 /* Pods_ChrisCombes_iOSCodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChrisCombes_iOSCodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB45D7E6E24BD4DE5F88161 /* Pods-ChrisCombes_iOSCodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChrisCombes_iOSCodeChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChrisCombes_iOSCodeChallenge/Pods-ChrisCombes_iOSCodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		EF54956A4E0DD58DCF85CB7D /* Pods_ChrisCombes_iOSCodeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChrisCombes_iOSCodeChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +112,7 @@
 		83EE333C1F098C9100386F0B /* ChrisCombes_iOSCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				83EE336F1F09FEAF00386F0B /* Fonts */,
 				83EE33651F0992B800386F0B /* Network */,
 				83EE33611F098E4C00386F0B /* Data */,
 				83EE335D1F098E0000386F0B /* Model */,
@@ -149,8 +155,17 @@
 		83EE33651F0992B800386F0B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				83EE336C1F09FE8900386F0B /* NetworkHelper.swift */,
 			);
 			name = Network;
+			sourceTree = "<group>";
+		};
+		83EE336F1F09FEAF00386F0B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				83EE33701F09FEC700386F0B /* bebasneue.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		A77049DEC26E3FD4B7B89998 /* Pods */ = {
@@ -256,6 +271,7 @@
 				83EE33631F098EB900386F0B /* example-reddit-data.json in Resources */,
 				83EE33481F098C9100386F0B /* LaunchScreen.storyboard in Resources */,
 				83EE33451F098C9100386F0B /* Assets.xcassets in Resources */,
+				83EE33711F09FEC700386F0B /* bebasneue.ttf in Resources */,
 				83EE33431F098C9100386F0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +386,7 @@
 			files = (
 				83EE33401F098C9100386F0B /* ViewController.swift in Sources */,
 				83EE333E1F098C9100386F0B /* AppDelegate.swift in Sources */,
+				83EE336D1F09FE8900386F0B /* NetworkHelper.swift in Sources */,
 				83EE336A1F09992100386F0B /* RedditQuery.swift in Sources */,
 				83EE335F1F098E1000386F0B /* RedditPost.swift in Sources */,
 			);
@@ -379,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EE336E1F09FE8900386F0B /* NetworkHelper.swift in Sources */,
 				83EE33531F098C9100386F0B /* ChrisCombes_iOSCodeChallengeTests.swift in Sources */,
 				83EE33601F098E1000386F0B /* RedditPost.swift in Sources */,
 				83EE336B1F09992100386F0B /* RedditQuery.swift in Sources */,
