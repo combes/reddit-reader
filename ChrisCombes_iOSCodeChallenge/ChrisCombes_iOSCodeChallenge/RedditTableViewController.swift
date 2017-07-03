@@ -16,6 +16,8 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var tableView: UITableView!
     
     private var queryResult:RedditQuery?
+    private let refreshControl = UIRefreshControl()
+    private var cachedSearchText = ""
     
     static func redditTableViewController() ->RedditTableViewController {
         let controller = RedditTableViewController(nibName: "RedditTableView", bundle: nil)
@@ -26,14 +28,25 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
         super.viewDidLoad()
         
         tableView.register(UINib.init(nibName: "RedditPostTableViewCell", bundle: nil), forCellReuseIdentifier: RedditPostTableViewCell.identifier)
-
+        
         // Handle table row height variation
         tableView.estimatedRowHeight = 50
         tableView.rowHeight = UITableViewAutomaticDimension
-
+        
         // Begin with default search category
         searchBar.text = defaultSearchCategory
         runSearchWithText(defaultSearchCategory)
+        
+        // Handle pull refresh
+        // Add to Table View
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            tableView.addSubview(refreshControl)
+        }
+        
+        // Configure Refresh Control
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
     }
     
     // MARK: UITableViewDataSource
@@ -52,6 +65,7 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
         
         if let post = queryResult?.redditPosts[indexPath.row] {
             cell.configureCellWithRedditPost(post)
+            cell.contentView.alpha = 0
         }
         
         return cell
@@ -63,9 +77,22 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
             sharePost(post)
         }
     }
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        UIView.animate(withDuration: 0.5) {
+            cell.contentView.alpha = 1.0
+        }
+    }
     
     // MARK: Helpers
+    func refresh() {
+        runSearchWithText(cachedSearchText)
+    }
+    
     func runSearchWithText(_ text: String) {
+        
+        // Cache last query in support of refresh
+        cachedSearchText = text
         
         // Stop further queries until current result completes
         searchBar.isUserInteractionEnabled = false
@@ -76,6 +103,7 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
                 if let result = RedditQuery(json: json) {
                     self.queryResult = result
                     DispatchQueue.main.sync {
+                        self.refreshControl.endRefreshing()
                         self.tableView.reloadData()
                     }
                 }
@@ -93,7 +121,7 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
         let controller = UIActivityViewController(activityItems: [items], applicationActivities: nil)
         self.present(controller, animated: true, completion: nil)
     }
-
+    
     // MARK: Actions
     @IBAction func searchButtonTapped(_ sender: UIButton) {
         if let searchText = searchBar.text {
