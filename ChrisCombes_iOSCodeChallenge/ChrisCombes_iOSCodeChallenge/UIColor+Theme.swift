@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIColor {
-    func themeColor() -> UIColor {
+    static func themeColor() -> UIColor {
         return UIColor(colorLiteralRed: 0, green: 182.0/255.0, blue: 1.0, alpha: 1.0)
     }
 }

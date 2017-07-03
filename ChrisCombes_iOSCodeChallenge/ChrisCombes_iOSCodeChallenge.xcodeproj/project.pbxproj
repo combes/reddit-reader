@@ -101,6 +101,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		833C1C551F0AFDB300A56D55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				833C1C4F1F0AB98000A56D55 /* UIColor+Theme.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		83440ECB1F0AAEE4006AC4A7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +150,7 @@
 		83EE333C1F098C9100386F0B /* ChrisCombes_iOSCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				833C1C551F0AFDB300A56D55 /* Extensions */,
 				83440ECF1F0AAFD3006AC4A7 /* Views */,
 				83440ECB1F0AAEE4006AC4A7 /* Controllers */,
 				83EE336F1F09FEAF00386F0B /* Fonts */,
@@ -152,7 +161,6 @@
 				83EE33441F098C9100386F0B /* Assets.xcassets */,
 				83EE33461F098C9100386F0B /* LaunchScreen.storyboard */,
 				83EE33491F098C9100386F0B /* Info.plist */,
-				833C1C4F1F0AB98000A56D55 /* UIColor+Theme.swift */,
 			);
 			path = ChrisCombes_iOSCodeChallenge;
 			sourceTree = "<group>";
