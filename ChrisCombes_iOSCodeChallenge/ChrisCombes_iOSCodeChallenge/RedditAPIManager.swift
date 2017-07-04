@@ -14,7 +14,7 @@ typealias ServiceResponse = (JSON, Error?) -> Void
 class RedditAPIManager {
     
     // Use public API feed
-    let baseURL = "http://www.reddit.com/r/%@/.json"
+    let baseURL = "https://www.reddit.com/r/%@/.json"
     
     /// Request posts matching the specified category.
     ///
