@@ -50,6 +50,7 @@
 		833C1C4F1F0AB98000A56D55 /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		833C1C511F0AE8CD00A56D55 /* RedditPostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedditPostTableViewCell.xib; sourceTree = "<group>"; };
 		833C1C531F0AEC6400A56D55 /* RedditPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditPostTableViewCell.swift; sourceTree = "<group>"; };
+		833C1C5A1F0B126900A56D55 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		83440EC61F0AA9AF006AC4A7 /* RedditAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditAPIManager.swift; sourceTree = "<group>"; };
 		83440EC91F0AAB76006AC4A7 /* RedditAPIManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditAPIManagerTests.swift; sourceTree = "<group>"; };
 		83440ECC1F0AAF78006AC4A7 /* RedditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedditTableViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +151,7 @@
 		83EE333C1F098C9100386F0B /* ChrisCombes_iOSCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				833C1C5A1F0B126900A56D55 /* README.md */,
 				833C1C551F0AFDB300A56D55 /* Extensions */,
 				83440ECF1F0AAFD3006AC4A7 /* Views */,
 				83440ECB1F0AAEE4006AC4A7 /* Controllers */,
