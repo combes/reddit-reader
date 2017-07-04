@@ -118,6 +118,10 @@ class RedditTableViewController: UIViewController, UITableViewDataSource, UITabl
                 }
             }
             
+            if !isInternetAvailable() {
+                showNetworkOutage(view: self.view)
+            }
+
             DispatchQueue.main.sync {
                 // Allow search again
                 self.searchBar.isUserInteractionEnabled = true
